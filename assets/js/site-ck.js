@@ -30,7 +30,6 @@ $(document).ready(function() {
     be(be_api_key);
     be.user.projects(behanceId, function(data) {
         var t = [];
-        console.log(data);
         var projects = data.projects;
         for (i = 0; i < pLimit && i < projects.length; i++) {
             var n = mapProject(projects[i]);
@@ -86,6 +85,11 @@ jQuery(document).ready(function(e) {
 });
 jQuery(document).ready(function(e) {
     $.flickr.getPublicPhotos(flickrId, function(photos) {
+        var t = [];
+        $.each(photos, function(photos, p) {
+            t.push('<a href="'+ p.href + '" title="' + p.title +'"></a>');
+        });
+        $("#pictures").html(t.join(""));
         var gallery = blueimp.Gallery(
                 document.getElementById('pictures').getElementsByTagName('a'),
                 {
@@ -93,8 +97,7 @@ jQuery(document).ready(function(e) {
                     carousel: true
                 }
         );
-        gallery.add(photos);
-        $(".slide").click(function() {
+        $(".slide image").click(function() {
             window.open('https://www.flickr.com/photos/' + flickrId);
         });
     });
