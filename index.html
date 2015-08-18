@@ -17,6 +17,8 @@
         <link href="assets/css/main.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
+        <link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -37,11 +39,11 @@
 
         <section id="landing">
             <div class="landing-block">
-                
+
             </div>
             <a href="index.html#hero" class="scroll"><span class="down-arrow"></span></a>
         </section>
-        
+
         <section id="hero">
             <div class="hero-block">
                 <img class="img-circle" src="assets/img/logo.png" width="200" height="200" class="mb-7 hero-image">
@@ -49,7 +51,7 @@
                     It is extremely easy to configure and use. Designed to show your Dribbble shots.<br/>
                     No complex stuff. Your logo, your shots & your social links. Easy stuff!</p>
             </div>
-            
+
             <a href="index.html#work" class="scroll"><span class="down-arrow"></span></a>
         </section>
 
@@ -57,15 +59,25 @@
         <section id="work">
             <div class="showcase">
                 <div class="showcase-tiles">
-                    <ul class="slides">
+                    <ul class="thumbs">
                         <!--Dribbble feed-->	
                     </ul>
                 </div>
             </div>
         </section>
-        
+
         <section id="photo">
-            
+            <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-carousel">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+            <div id="pictures">
+                <a href="assets/img/home.jpg" title="Loading..."></a>
+            </div>
         </section>
 
         <section id="networks">
@@ -82,10 +94,11 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/blueimp-gallery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jribbble.js"></script>
+        <script src="assets/js/flickr.js"></script>
         <script src="assets/js/site-ck.js"></script>
-
     </body>
 </html>
