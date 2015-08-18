@@ -1,7 +1,7 @@
 var flickrId = '127775416@N07';
 
 /* Dribbble Shots using Jribbble plugin */
-$(document).ready(function() {
+/*$(document).ready(function() {
     $.jribbble.getShotsByPlayerId("powdah", function(e) {
         var t = [];
         $.each(e.shots, function(e, n) {
@@ -11,7 +11,7 @@ $(document).ready(function() {
         });
         $(".thumbs").html(t.join(""))
     }, {page: 1, per_page: 8})
-});
+});*/
 $(function() {
     $(".service").hover(function() {
         $("#networks").addClass($(this).data("network")).addClass("active");
@@ -64,6 +64,9 @@ jQuery(document).ready(function(e) {
     );
     $.flickr.getPublicPhotos(flickrId, function(photos){
         gallery.add(photos);
+        $(".slide").click(function(){
+            window.open('https://www.flickr.com/photos/' + flickrId);
+        });
     });
 });
 
