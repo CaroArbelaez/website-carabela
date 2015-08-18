@@ -1,4 +1,7 @@
 var flickrId = '127775416@N07';
+var behanceId = 'designerpreis';
+var be_api_key = 'WI2EE4ZoMLS1BX9fT1qpIAGqe7Mq3gUV';
+var pLimit = 8;
 
 /* Dribbble Shots using Jribbble plugin */
 /*$(document).ready(function() {
@@ -12,6 +15,33 @@ var flickrId = '127775416@N07';
         $(".thumbs").html(t.join(""))
     }, {page: 1, per_page: 8})
 });*/
+
+function mapProject(project){
+    var n = {
+        url: project.url,
+        title: project.name,
+        image_url: project.covers['404'],
+        fields: project.fields.join()
+    };
+    return n;
+}
+
+$(document).ready(function(){
+    be(be_api_key);
+    be.user.projects(behanceId, function(data){
+        var t = [];
+        console.log(data);
+        var projects = data.projects;
+        for(i=0; i<pLimit && i<projects.length; i++){
+            var n = mapProject(projects[i]);
+            t.push('<li><a href="' + n.url + '">');
+            t.push('<img src="' + n.image_url + '" ');
+            t.push('alt="' + n.title + '"><span class="d-hover">' + n.title +
+                    "<p>" + n.fields.toLowerCase() + "</p></span></a></li>")
+        }
+        $(".thumbs").html(t.join(""));
+    });
+});
 $(function() {
     $(".service").hover(function() {
         $("#networks").addClass($(this).data("network")).addClass("active");
@@ -69,6 +99,3 @@ jQuery(document).ready(function(e) {
         });
     });
 });
-
-
-/*Change, in the first line the username "powdah" with your dribbble username. That's all */
