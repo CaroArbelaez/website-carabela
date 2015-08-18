@@ -26,7 +26,7 @@
                 photos.push(
                         {
                             title: photo.title,
-                            href: baseUrl + '_c.jpg',
+                            href: baseUrl + '_h.jpg',
                             type: 'image/jpeg',
                         }
                 );
