@@ -182,8 +182,9 @@ a:active:hover {
 
    =========================*/
 
-#hero{
+#hero p{
     color: black;
+    margin-top: 10px;
 }
 
 /* =========================
@@ -322,19 +323,23 @@ ul.thumbs li a p {
 #networks .icon {
     
 }
-#networks .dribbble:hover {
-    color: #ed6297;
+#networks .behance:hover {
+    color: #1769ff;
 }
 
-#networks .facebook:hover {
-    color: #3b5998;
+#networks .flickr:hover {
+    color: #ff0084;
 }
 
-#networks .twitter:hover {
-    color: #2094CA;
+#networks .pinterest:hover {
+    color: #cc2127;
 }
 
-#networks .mail:hover {
+#networks .instagram:hover {
+    color: #3f729b;
+}
+
+#networks .email:hover {
     color: #f39c12;
 }
 
