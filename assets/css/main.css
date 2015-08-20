@@ -9,9 +9,14 @@
 
 /* FONTS */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue Book.otf');
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background: #f5f6f7;
     color: #f5f6f7;
     font-size: 20px;
@@ -134,10 +139,10 @@ a:active:hover {
     margin-top: -90px; }
 
 #hero {
-    background: #1abc9c; }
+    background: #D9D4D6; }
 
 #work {
-    background: #3498db; }
+    background: #009CFF; }
 
 #landing{
     background: url('../img/home.jpg') center center no-repeat;
@@ -145,7 +150,7 @@ a:active:hover {
 }
 
 #networks {
-    background: #474e5d; }
+    background: #5E1A43; }
 
 .down-arrow {
     position: absolute;
@@ -155,6 +160,31 @@ a:active:hover {
     width: 25px;
     height: 14px;
     background: url("../img/arrow.png") no-repeat; }
+
+/* =========================
+
+                        LANDING 
+
+   =========================*/
+#landing .jumbotron{
+    background: transparent;
+}
+
+#landing .jumbotron h1{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    margin-left: 5%;
+}
+
+/* =========================
+
+                        ABOUT 
+
+   =========================*/
+
+#hero{
+    color: black;
+}
 
 /* =========================
 
@@ -194,7 +224,7 @@ a:active:hover {
     text-align: center;
     padding-top: 25%;
     line-height: 20px;
-    background: rgba(231, 76, 60, 0.9); }
+    background: rgba(167, 168, 173, 0.9); }
 .d-hover p {
     display: block !important;
     z-index: 500;
@@ -289,6 +319,9 @@ ul.thumbs li a p {
     padding: 18px;
 }
 
+#networks .icon {
+    
+}
 #networks .dribbble:hover {
     color: #ed6297;
 }

@@ -1,5 +1,5 @@
 var flickrId = '127775416@N07';
-var behanceId = 'designerpreis';
+var behanceId = 'carabela';
 var be_api_key = 'WI2EE4ZoMLS1BX9fT1qpIAGqe7Mq3gUV';
 var pLimit = 8;
 
@@ -97,8 +97,5 @@ jQuery(document).ready(function(e) {
                     carousel: true
                 }
         );
-        $(".slide image").click(function() {
-            window.open('https://www.flickr.com/photos/' + flickrId);
-        });
     });
 });
