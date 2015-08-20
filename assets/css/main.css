@@ -182,9 +182,19 @@ a:active:hover {
 
    =========================*/
 
-#hero p{
+#hero p,
+#hero p a{
     color: black;
     margin-top: 10px;
+}
+
+#hero p a{
+    font-weight: 300;
+    color: white;
+}
+
+#hero p a:hover{
+    color: #C10F1A;
 }
 
 /* =========================
