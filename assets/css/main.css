@@ -117,16 +117,11 @@ a:active:hover {
 }
 
 .page-header{
-    font-family: 'Bebas Neue', sans-serif;
     border-color: transparent;
     //background: black;
     margin-bottom: 0px;
     margin-top: 0px;
     padding-top: 15px;
-}
-
-.page-header h1{
-    margin-top: 0px;
 }
 
 /* =========================
@@ -158,10 +153,10 @@ a:active:hover {
     margin-top: -90px; }
 
 #hero {
-    background: #D9D4D6; }
+    background: #FFF069; }
 
 #work {
-    background: #009CFF; }
+    background: #A9B5A9; }
 
 #photo {
     background: black; }
@@ -172,7 +167,7 @@ a:active:hover {
 }
 
 #networks {
-    background: #5E1A43; }
+    background: #00A890; }
 
 .down-arrow {
     position: absolute;
@@ -227,15 +222,6 @@ a:active:hover {
         margin-left: 10%;
         margin-right: 10%;
     }
-}
-
-#hero p a{
-    font-weight: 300;
-    color: white;
-}
-
-#hero p a:hover{
-    color: #C10F1A;
 }
 
 /* =========================
@@ -343,6 +329,15 @@ ul.thumbs li a p {
 
    =========================*/
 
+#photo p a{
+    font-weight: 300;
+    color: white;
+}
+
+#photo p a:hover{
+    color: #C10F1A;
+}
+
 #blueimp-gallery{
     margin: 0;
     padding: 0;
@@ -397,6 +392,6 @@ ul.thumbs li a p {
 }
 
 #networks .email:hover {
-    color: #24CFAF;
+    color: #BAC7B9;
 }
 
