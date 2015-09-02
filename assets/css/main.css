@@ -262,14 +262,14 @@ a:active:hover {
     text-align: center;
     padding-top: 25%;
     line-height: 20px;
-    background: rgba(167, 168, 173, 0.9); }
+    background: rgba(10, 185, 245, 0.8); }
 .d-hover p {
     display: block !important;
     z-index: 500;
     margin-top: 25px;
     font-size: 14px;
     font-style: italic;
-    font-weight: 300; }
+    font-weight: 400; }
 
 ul.thumbs {
     line-height: 0px;
