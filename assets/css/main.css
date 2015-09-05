@@ -153,10 +153,10 @@ a:active:hover {
     margin-top: -90px; }
 
 #hero {
-    background: #FFF069; }
+    background: #3498db; }
 
 #work {
-    background: #A9B5A9; }
+    background: #ecf0f1; }
 
 #photo {
     background: black; }
@@ -167,7 +167,7 @@ a:active:hover {
 }
 
 #networks {
-    background: #00A890; }
+    background: #2980b9; }
 
 .down-arrow {
     position: absolute;
@@ -214,6 +214,7 @@ a:active:hover {
 
 #hero p{
     margin-left: 25%;
+    color: white;
     margin-right: 25%;
 }
 
