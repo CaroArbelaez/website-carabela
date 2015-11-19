@@ -1,7 +1,6 @@
 var flickrId = '127775416@N07';
 var behanceId = 'carabela';
 var be_api_key = 'WI2EE4ZoMLS1BX9fT1qpIAGqe7Mq3gUV';
-var pLimit = 8;
 
 /* Dribbble Shots using Jribbble plugin */
 /*$(document).ready(function() {
@@ -31,7 +30,8 @@ $(document).ready(function() {
     be.user.projects(behanceId, function(data) {
         var t = [];
         var projects = data.projects;
-        for (i = 0; i < pLimit && i < projects.length; i++) {
+        var pLimit = 8;
+        for (var i = 0; (i < pLimit) && (i < projects.length); i++) {
             var n = mapProject(projects[i]);
             t.push('<li><a href="' + n.url + '">');
             t.push('<img src="' + n.image_url + '" ');

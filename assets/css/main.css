@@ -25,8 +25,8 @@ body {
     font-weight: 300; }
 
 @media only screen and (max-device-width: 480px) {
-   body { 
-       font-size: 16px; 
+   body {
+       font-size: 16px;
        line-height: 20px;
    }
 }
@@ -52,7 +52,7 @@ hr {
 
 /* =========================
 
-              GENERAL STYLES 
+              GENERAL STYLES
 
  =========================*/
 *, *:before, *:after {
@@ -126,7 +126,7 @@ a:active:hover {
 
 /* =========================
 
-                SECTION STYLES 
+                SECTION STYLES
 
    =========================*/
 #landing,
@@ -180,7 +180,7 @@ a:active:hover {
 
 /* =========================
 
-                        LANDING 
+                        LANDING
 
    =========================*/
 #landing .jumbotron{
@@ -198,11 +198,12 @@ a:active:hover {
 #landing .jumbotron h1{
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
+    color: #F1F4FF;
 }
 
 /* =========================
 
-                        ABOUT 
+                        ABOUT
 
    =========================*/
 
@@ -227,7 +228,7 @@ a:active:hover {
 
 /* =========================
 
-                        WORK 
+                        WORK
 
    =========================*/
 
@@ -250,7 +251,7 @@ a:active:hover {
 
 /* =========================
 
-                FEED 
+                FEED
 
    =========================*/
 .d-hover {
@@ -326,7 +327,7 @@ ul.thumbs li a p {
 
 /* =========================
 
-                        PHOTO 
+                        PHOTO
 
    =========================*/
 
@@ -352,7 +353,7 @@ ul.thumbs li a p {
 
 /* =========================
 
-                        FOOTER 
+                        FOOTER
 
    =========================*/
 #networks {
@@ -395,4 +396,3 @@ ul.thumbs li a p {
 #networks .email:hover {
     color: #BAC7B9;
 }
-
